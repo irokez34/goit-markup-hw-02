@@ -23,7 +23,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.address-list-item:is(:hover, :active)
+.address-list-item:is(:hover, :focus)
 {
   color:#404BBF
 }
@@ -83,14 +83,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--link-color);
+  color: var(--nav-color);
 }
-.nav-item:hover{
+.nav-item:is(:hover, :focus)
+{
   color:#404BBF;
 }
-.nav-item:active {
-  color: #404BBF;
-}
+
 
 
 
@@ -144,7 +143,7 @@ color: var(--nav-color);
   color: #FFFFFF;
   cursor: pointer;
 }
-.main-btn:is(:hover, :active)
+.main-btn:is(:hover, :focus)
 {
   background-color: #404BBF;
 
@@ -188,7 +187,7 @@ color:var(--nav-color);
 .logo
 {
   color:var(--logo-color);
-  font-family: 'Raleway';
+  font-family: 'Raleway',sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
