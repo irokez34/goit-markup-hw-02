@@ -1,6 +1,7 @@
 :root {
   --header-background-color: rgb(255, 255, 255);
   --logo-color: #4D5AE5;
+  --background-btn-color:#F4F4FD;
   --nav-color:#2e2f42; 
   --link-color: #434455;
 }
@@ -74,6 +75,7 @@ img{
 /* ----------------------------------------MAIN--------------------------------------------- */
 
 .list-button {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -82,17 +84,18 @@ img{
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
-  color: #4D5AE5;
+  color: var(--logo-color);
   width: 116px;
   height: 48px;
-  background: #F4F4FD;
+  background-color: var(--background-btn-color);
   border: 1px solid #E7E9FC;
   border-radius: 4;
 }
 
-.list-button:hover {
+.list-button:is(:hover, :focus)
+{
   color: #FFFFFF;
-  background: #404BBF;
+  background-color:  #404BBF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -117,8 +120,9 @@ img{
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color:var(--nav-color);
 }
+
 
 .list-object {
   font-weight: 400;
