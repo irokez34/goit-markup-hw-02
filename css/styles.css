@@ -11,11 +11,29 @@ body {
   color: #434455;
   background-color: #FFFFFF;
 }
-
+h1,h2,h3,h4,h5,h6,p
+{
+  margin: 0;
+  padding: 0;
+}
+img{
+ display: block;
+}
 /* -------------------------------------HEADER---------------------------------------- */
 .header {
   background-color: var(--header-background-color);
 }
+.container 
+{
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 5px solid tomato;
+  padding-top:120px;
+  padding-bottom:120px;
+}
+
 .address-list-item {
   font-weight: 400;
   font-size: 16px;
@@ -54,6 +72,7 @@ body {
 }
 
 /* ----------------------------------------MAIN--------------------------------------------- */
+
 .list-button {
   font-weight: 500;
   font-size: 16px;
